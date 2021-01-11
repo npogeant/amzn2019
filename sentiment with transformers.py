@@ -10,9 +10,15 @@ model = AutoModelForSequenceClassification.from_pretrained(model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 classifier = pipeline('sentiment-analysis', model=model, tokenizer=tokenizer)
 
-#An example to use the classifier
-classifier('A strong second-half of the year for dealmaking has bankers optimistic for 2021')
-
+#A loop that will create the labels
+df = (
+    df
+    .assign(sentiment = lambda x: x['content_modified'].apply(lambda s: classifier(s)))
+    .assign(
+         label = lambda x: x['sentiment'].apply(lambda s: (s[0]['label'])),
+         score = lambda x: x['sentiment'].apply(lambda s: (s[0]['score']))
+    )
+)
 #https://huggingface.co/transformers/quicktour.html
 #https://huggingface.co/transformers/usage.html
 #https://github.com/ProsusAI/finBERT
