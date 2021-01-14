@@ -12,4 +12,4 @@ The jupyter notebook "Main_Analysis_AMZN.ipynb" in the repository is a large par
 
 I also wrote an [article](https://www.medium.com) on medium explaning with details the analysis from the beginning and using stock market data to observe results.
 
-Some of the scripts I used are in the Script folder.
+Some of the scripts I used are in the Scripts folder.
