@@ -47,12 +47,12 @@ dec = ((1846.890015 - 1781.599976)/ 1781.599976)
 amzn_rmonthly = pd.DataFrame([jan, feb, mar, apr, may, jun, jul, aug, sept, oct, nov, dec],
                              ['2019-01', '2019-02', '2019-03', '2019-04', '2019-05', '2019-06', '2019-07', '2019-08', '2019-09', '2019-10', '2019-11', '2019-12'])
 amzn_rmonthly.reset_index(level=0, inplace=True)
-amzn_rmonthly.columns = ["Month","Monthly Pourcentage Change"]
+amzn_rmonthly.columns = ["Month","Monthly Percentage Change"]
 amzn_rmonthly["Color"] = np.where(amzn_rmonthly["Monthly Pourcentage Change"]<0, 'red', 'blue')
 amzn_rmonthly["Pct"] = ['11.67%', '0.84%', '6.52%', '6.19%', '-7.14%', '11.87%', '-2.88%', '-4.26%', '-3.01%', '2.36%', '0.52%', '3.66%']
 
 #AMZN Monthly evolution by color (positive or negative)
-fig = px.bar(amzn_rmonthly, x='Month', color='Color', y='Pct', title='Monthly Pourcentage Change of $AMZN in 2019', text='Pct', width=800, height=400)
+fig = px.bar(amzn_rmonthly, x='Month', color='Color', y='Pct', title='Monthly Percentage Change of $AMZN in 2019', text='Pct', width=800, height=400)
 fig.update_layout(showlegend=False, plot_bgcolor='white', yaxis=dict(title=''), margin=dict(autoexpand=False, l=100, r=20, t=110,))
 fig.update(layout=dict(title=dict(x=0.5)))
 fig.update_yaxes(visible=False)
