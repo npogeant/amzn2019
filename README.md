@@ -10,6 +10,6 @@ The data look are tweets for the entire year of 2019 with the keyword $AMZN.
 
 The jupyter notebook "Main_Analysis_AMZN.ipynb" in the repository is a large part of the analysis from the descriptive one to the opinion mining.
 
-I also wrote an [article](https://www.medium.com) on medium explaning with details the analysis from the beginning and using stock market data to observe results.
+I also wrote an [article](https://npogeant.medium.com/the-amazon-stock-vs-twitter-in-2019-931c88831fc1) on medium explaning with details the analysis from the beginning and using stock market data to observe results.
 
 Some of the scripts I used are in the Scripts folder.
