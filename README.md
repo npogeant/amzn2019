@@ -4,7 +4,7 @@ This projet is basically looking to analyse tweets and try to link to the financ
 
 ## The data (tweets scrapped)
 
-The data look are tweets for the entire year of 2019 with the keyword $AMZN.
+The data are tweets for the entire year of 2019 with the keyword $AMZN.
 
 ## Analysis
 
