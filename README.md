@@ -1,15 +1,20 @@
-# Amazon Stock vs Twitter 2019
+# Amazon Stock vs Twitter 2019 [![notebook](https://img.shields.io/badge/notebook-amazon_analysis-black?style=flat-square)](https://github.com/npogeant/parisian_rents/blob/master/notebooks/Modeling.ipynb) [![medium](https://img.shields.io/badge/medium-amazon_analysis-blue?style=flat-square)](https://npogeant.medium.com/the-amazon-stock-vs-twitter-in-2019-931c88831fc1)
+> A parallel between Twitter and the Stock Market
 
-This projet is basically looking to analyze tweets and try to link to the financial markets. It got a sentiment analysis from a pretrained model specialized with financial data.
+The question behind the project is : **Does Twitter influence the stock market ?**
+
+The project attempts to link tweets to the financial market by using sentiment analysis and determining whether media discussions influence stock prices.
 
 ## The data (tweets scrapped)
 
-The data are tweets for the entire year of 2019 with the keyword $AMZN.
+Data are tweets from the entire year of 2019 with the keyword $AMZN.
 
 ## Analysis
 
-The jupyter notebook "Main_Analysis_AMZN.ipynb" in the repository is a large part of the analysis from the descriptive one to the opinion mining.
+The jupyter notebook **[Main_Analysis_AMZN](https://github.com/npogeant/parisian_rents/blob/master/notebooks/Modeling.ipynb)** in the repository is a large part of the analysis from the descriptive one to the opinion mining.
 
-I also wrote an [article](https://npogeant.medium.com/the-amazon-stock-vs-twitter-in-2019-931c88831fc1) on medium explaning with details the analysis from the beginning and using stock market data to observe results.
+<p align="center">
+  <img src="Utils/notebook.png" alt="Notebook" width="738">
+</p>
 
-Some of the scripts I used are in the Scripts folder.
+I also wrote an **[article](https://npogeant.medium.com/the-amazon-stock-vs-twitter-in-2019-931c88831fc1)** on medium explaning with details the analysis from the beginning and using stock market data to observe results.
